@@ -1,0 +1,145 @@
+/* ==== Base Reset ==== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    font-size: 16px;
+    font-family:
+        -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+button,
+input,
+textarea,
+select {
+    font: inherit;
+    color: inherit;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+header {
+    height: 6vh;
+    display: flex;
+    flex-flow: row nowrap;
+    position: sticky;
+    background-color: rgba(0, 0, 0, 0.1);
+    gap: 50%;
+}
+
+header div {
+    margin-left: 3%;
+    height: 100%;
+    width: 10%;
+}
+
+header nav {
+    width: 40%;
+}
+
+.header-nav ul {
+    display: flex;
+    flex-flow: row nowrap;
+    height: 100%;
+}
+
+.header-nav li {
+    width: 30%;
+    margin: 0 8%;
+}
+
+a.nav-link {
+    display: inline-block;
+    height: 100%;
+}
+
+.icon-wrapper {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+.icon {
+    height: 100%;
+    width: 60%;
+}
+
+li.product {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    height: 500px;
+    margin-bottom: 0.5rem;
+}
+
+div.hero-container {
+    position: relative;
+    height: 100%;
+}
+
+div.center-text {
+    position: absolute;
+    transform: translateY(550%);
+    color: white;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    gap: 1rem;
+    flex-flow: column nowrap;
+}
+
+.hero-container picture {
+    height: 100%;
+}
+
+img.product-image {
+    height: 100%;
+    object-fit: cover;
+}
+
+.cta-wrapper a {
+    border: 1px solid white;
+    border-radius: 1rem;
+    padding: 0.5rem 1rem;
+    position: relative;
+    background-clip: padding-box;
+}
+
+a.learn {
+    border-color: blue;
+    color: white;
+    background-color: blue;
+}
+
+a.buy {
+    border-color: blue;
+    color: blue;
+}
